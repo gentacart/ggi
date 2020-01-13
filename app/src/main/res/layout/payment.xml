@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView04"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.19" >
+
+        <EditText
+            android:id="@+id/payBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Nama bank"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/payAccountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payBank"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Nomor Rekening"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/payAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payAccountNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Jumlah pembayaran"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/payNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payAmount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:ems="10"
+            android:hint="Berita"
+            android:inputType="textPersonName" />
+        
+         <TextView
+             android:id="@+id/payLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/payNews"
+             android:text="Tanggal Bayar"
+             android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+         <DatePicker
+            android:id="@+id/payDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payLabel"
+             android:layout_marginTop="34dp"
+             android:layout_marginBottom="34dp"
+             android:layout_centerHorizontal="true"
+             />
+        
+      
+
+        <Button
+            android:id="@+id/paySubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payDate"
+            android:layout_centerHorizontal="true"
+            android:minWidth="100dp"
+            android:text="Submit" />
+
+       
+
+    </RelativeLayout>
+</ScrollView>
+

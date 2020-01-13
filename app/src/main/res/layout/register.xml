@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.19" >
+
+        <EditText
+            android:id="@+id/regName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Username"
+            />
+
+        <EditText
+            android:id="@+id/regPwd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/regName"
+            android:layout_marginTop="30dp"
+            android:password="true"
+            android:ems="10"
+            android:hint="Masukan Password" />
+
+        <EditText
+            android:id="@+id/regPwd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/regPwd1"
+            android:layout_marginTop="30dp"
+            android:password="true"
+            android:ems="10"
+            android:hint="Masukan Password lagi" />
+
+        <EditText
+            android:id="@+id/regPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/regPwd2"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Telepon"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/regAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/regPhone"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Alamat"/>
+
+        <Button
+            android:id="@+id/regSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regAddress"
+            android:layout_centerHorizontal="true"
+            android:minWidth="100dp"
+            android:text="Daftar" />
+
+    </RelativeLayout>
+</ScrollView>
+

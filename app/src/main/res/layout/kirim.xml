@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView04"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.19" >
+
+        <EditText
+            android:id="@+id/payNamaPengirim"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Nama Pengirim"
+            android:inputType="textPersonName" />
+        
+        <EditText
+            android:id="@+id/payHpPengirim"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/payNamaPengirim"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="No HP Pengirim"
+            android:inputType="phone" />
+      
+        
+        <EditText
+            android:id="@+id/payNamaPenerima"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/payHpPengirim"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Nama Penerima"
+            android:inputType="textPersonName" />
+      
+      <EditText
+            android:id="@+id/payTelepon"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/payNamaPenerima"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Nama Penerima"
+            android:inputType="phone" />
+      
+        <EditText
+            android:id="@+id/payAlamat"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/payTelepon"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Alamat Pengiriman"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/paySubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payDate"
+            android:layout_centerHorizontal="true"
+            android:minWidth="100dp"
+            android:text="Submit" />
+
+       
+
+    </RelativeLayout>
+</ScrollView>
+

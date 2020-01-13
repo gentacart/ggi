@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView02"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.19" >
+
+        <TextView
+            android:id="@+id/txUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:minWidth="150dp"
+             />
+
+        <Button
+            android:id="@+id/btnHomeProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:minWidth="150dp"
+            android:text="Produk" />
+       
+         <Button
+             android:id="@+id/btnHomeOrder"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/btnHomeProduct"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="20dp"
+             android:minWidth="150dp"
+             android:text="Orderan Anda" />
+       
+         
+         
+         
+          <Button
+              android:id="@+id/btnHomeNota"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/btnHomeOrder"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="20dp"
+              android:minWidth="150dp"
+              android:text="Nota Anda" />
+          
+          <Button
+             android:id="@+id/btnHomePaymentNota"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/btnHomeNota"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="20dp"
+             android:minWidth="150dp"
+             android:text="Pembayaran Anda" />
+          
+          <Button
+             android:id="@+id/btnHomeNotaHistory"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/btnHomePaymentNota"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="20dp"
+             android:minWidth="150dp"
+             android:text="History Nota" />
+          
+          <Button
+             android:id="@+id/btnHomeCaraOrder"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/btnHomeNotaHistory"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="20dp"
+             android:minWidth="150dp"
+             android:text="Cara Order" />
+               
+          
+          <Button
+             android:id="@+id/btnOngkir"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/btnHomeCaraOrder"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="20dp"
+             android:minWidth="150dp"
+             android:text="Cek Ongkir " />
+          
+         <Button
+             android:id="@+id/btnHomeResi"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/btnOngkir"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="20dp"
+             android:minWidth="150dp"
+             android:text="Resi" />
+         
+         <Button
+             android:id="@+id/btnHomeContact"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/btnHomeResi"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="20dp"
+             android:minWidth="150dp"
+             android:text="Hubungi Kami" />
+
+        <Button
+            android:id="@+id/btnHomeLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnHomeContact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:minWidth="150dp"
+            android:text="Logout" />
+
+    </RelativeLayout>
+</ScrollView>
+

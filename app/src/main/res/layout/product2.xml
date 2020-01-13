@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+     <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+           <EditText
+        android:id="@+id/editProductSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:hint="Search"
+        >
+    	</EditText>
+ <Button
+               android:id="@+id/btnSearchProduct"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Search" />
+        </TableRow>
+
+    </TableLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp" 
+        />
+
+</LinearLayout>

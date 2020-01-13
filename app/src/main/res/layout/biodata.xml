@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.19" >
+        
+        <TextView
+            android:id="@+id/biodataTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Nama"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <EditText
+            android:id="@+id/biodataName"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/biodataTextName"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="masukan nama anda"
+             />
+        
+        <TextView
+            android:id="@+id/biodataTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/biodataName"
+            android:text="Telepon"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/biodataPhone"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/biodataTextPhone"
+            android:ems="10"
+            android:hint="masukan no handphone"
+            android:inputType="number" />
+        
+         <TextView
+            android:id="@+id/biodataTextAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/biodataPhone"
+            android:text="Alamat"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+         
+        <EditText
+            android:id="@+id/biodataAlamat"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/biodataTextAddress"
+            android:ems="10"
+            android:hint="Alamat"
+            android:inputType="text" />
+        
+         <TextView
+            android:id="@+id/biodataTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/biodataAlamat"
+            android:text="Email"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <EditText
+            android:id="@+id/biodataEmail"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/biodataTextEmail"
+            android:ems="10"
+            android:hint="Email anda"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/biodataSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/biodataEmail"
+            android:layout_centerHorizontal="true"
+            android:minWidth="100dp"
+            android:text="Save Profile" />
+
+        
+
+    </RelativeLayout>
+</ScrollView>
+
