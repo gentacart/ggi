@@ -28,6 +28,7 @@ public class HomeScreen extends Activity {
 		appConf = new AppConfiguration(this);
 		final TextView txUsername = (TextView) findViewById(R.id.txUsername);
 		final Button btnProduct = (Button) findViewById(R.id.btnHomeProduct);
+		final Button btnProductBahan = (Button) findViewById(R.id.btnHomeProductBahan);
 		final Button btnOrder = (Button) findViewById(R.id.btnHomeOrder);
 		final Button btnOngkir = (Button) findViewById(R.id.btnOngkir);
 		final Button btnNota = (Button) findViewById(R.id.btnHomeNota);
@@ -44,8 +45,17 @@ public class HomeScreen extends Activity {
 		btnProduct.setOnClickListener(new View.OnClickListener() {
 	         public void onClick(View v) {
 	        	 AppConfiguration.cekongkir = 0;
-	        	 new DoUpdateCategory(v.getContext()).execute();
+				 AppConfiguration.categoryproduct = "1";
+				 new DoUpdateProduct(v.getContext()).execute();
 	         }
+		});
+
+		btnProductBahan.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				AppConfiguration.cekongkir = 0;
+				AppConfiguration.categoryproduct = "2";
+				new DoUpdateProduct(v.getContext()).execute();
+			}
 		});
 
 		btnLogout.setOnClickListener(new View.OnClickListener() {
@@ -131,6 +141,41 @@ public class HomeScreen extends Activity {
 			return true;
 		}
 		return super.onKeyDown(keyCode, event);
+	}
+
+	class DoUpdateProduct extends AsyncTask<Object, Void, String> {
+		Context context;
+		ProgressDialog mDialog;
+
+		DoUpdateProduct(Context context) {
+			this.context = context;
+		}
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			mDialog = new ProgressDialog(this.context);
+			mDialog.setMessage("Please wait...");
+			mDialog.show();
+		}
+
+		@Override
+		protected String doInBackground(Object... params) {
+			String username = appConf.get("loginusername");
+			String ret = SendData.doUpdateProduct("0",username);
+			return ret;
+		}
+
+		@Override
+		protected void onPostExecute(String result) {
+			super.onPostExecute(result);
+			mDialog.dismiss();
+			appConf.set("product", result);
+			Log.d("resultproduct",result);
+			AppConfiguration.listproduct = result;
+			Intent productList = new Intent(context,ProductList.class);
+			startActivity(productList);
+		}
 	}
 
 	class DoSearchProvince extends AsyncTask<Object, Void, String> {

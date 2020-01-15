@@ -29,12 +29,23 @@
             android:layout_marginTop="20dp"
             android:minWidth="150dp"
             android:text="Produk" />
-       
-         <Button
+
+        <Button
+            android:id="@+id/btnHomeProductBahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnHomeProduct"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:minWidth="150dp"
+            android:text="Bahan" />
+
+
+        <Button
              android:id="@+id/btnHomeOrder"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:layout_below="@+id/btnHomeProduct"
+             android:layout_below="@+id/btnHomeProductBahan"
              android:layout_centerHorizontal="true"
              android:layout_marginTop="20dp"
              android:minWidth="150dp"
